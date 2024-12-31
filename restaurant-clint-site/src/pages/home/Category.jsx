@@ -11,10 +11,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 export default function Category() {
   return (
     <div className="max-w-3xl mx-auto">
-      <Swiper
+      <section>
+        <SectionTitle
+         subHeading="From 11:00 am to 10:00 pm"
+          heading="Order online"
+        ></SectionTitle>
+      </section>
+     <section> <Swiper
         slidesPerView={3}
         spaceBetween={30}
         pagination={{
@@ -27,46 +34,48 @@ export default function Category() {
           {" "}
           <div>
             <img src={slider1} />
-            <h3 className="uppercase -mt-20 text-center text-2xl italic">Salad</h3>
+            <h3 className="uppercase -mt-20 text-center text-2xl italic">
+              Salad
+            </h3>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <div>
             <img src={slider2} />
-            <h3 className="uppercase -mt-20 text-center text-2xl italic">Pizza</h3>
+            <h3 className="uppercase -mt-20 text-center text-2xl italic">
+              Pizza
+            </h3>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <div>
             <img src={slider3} />
-            <h3 className="uppercase -mt-20 text-center text-2xl italic">Soup</h3>
+            <h3 className="uppercase -mt-20 text-center text-2xl italic">
+              Soup
+            </h3>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <div>
             <img src={slider4} />
-            <h3 className="uppercase -mt-20 text-center text-2xl italic">pastry</h3>
+            <h3 className="uppercase -mt-20 text-center text-2xl italic">
+              pastry
+            </h3>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <div>
             <img src={slider5} />
-            <h3 className="uppercase -mt-20 text-center text-2xl italic">Salad</h3>
+            <h3 className="uppercase -mt-20 text-center text-2xl italic">
+              Salad
+            </h3>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
-      </Swiper>
+      </Swiper></section>
     </div>
   );
 }
