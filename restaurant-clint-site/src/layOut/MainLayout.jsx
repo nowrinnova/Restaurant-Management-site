@@ -7,7 +7,7 @@ export default function MainLayOut() {
   return (
     <div className="max-w-7xl mx-auto">
       <Navbar></Navbar>
-      <div className="min-h-screen mx-auto">
+      <div className="min-h-screen mx-auto ">
         <Outlet></Outlet>
       </div>
       <Footer></Footer>
