@@ -12,7 +12,7 @@ export default function Navbar() {
         <NavLink to='/contact' className="uppercase">Contact Us</NavLink>
       </li>
       <li>
-        <NavLink to='/dashboard' className="uppercase">DashBoard</NavLink>
+        <NavLink to='/order' className="uppercase">Order food</NavLink>
       </li>
       <li>
         <NavLink  to='/menu'  className="uppercase">Our Menu</NavLink>

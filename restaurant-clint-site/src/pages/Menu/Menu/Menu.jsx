@@ -10,15 +10,13 @@ import PopularMenu from "../../home/popularMenu/PopularMenu";
 import useMenu from "../../../hooks/useMenu";
 import MenuCategory from "../MenuCategory/MenuCategory";
 export default function Menu() {
-
-  const [menu]=useMenu()
-  const popular=menu.filter(item=>item.category=='popular')
-  const pizza=menu.filter(item=>item.category=='pizza')
-  const salad=menu.filter(item=>item.category=='salad')
-  const dessert=menu.filter(item=>item.category=='dessert')
-  const soup=menu.filter(item=>item.category=='soup')
+  const [menu] = useMenu();
+  const popular = menu.filter((item) => item.category == "popular");
+  const pizza = menu.filter((item) => item.category == "pizza");
+  const salad = menu.filter((item) => item.category == "salad");
+  const dessert = menu.filter((item) => item.category == "dessert");
+  const soup = menu.filter((item) => item.category == "soup");
   // const popular=menu.filter(item=>item.category=='popular')
-  
 
   return (
     <div>
@@ -48,7 +46,7 @@ export default function Menu() {
             subHeading="TODAY'S OFFER"
             heading="---Don't miss---"
           ></SectionTitle>
-       <MenuCategory popular={dessert}></MenuCategory>
+          <MenuCategory popular={dessert}></MenuCategory>
         </div>
       </div>
       <div>
@@ -92,7 +90,7 @@ export default function Menu() {
             subHeading="TODAY'S OFFER"
             heading="---Don't miss---"
           ></SectionTitle>
-        <MenuCategory popular={soup}></MenuCategory>
+          <MenuCategory popular={soup}></MenuCategory>
         </div>
       </div>
     </div>
